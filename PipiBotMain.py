@@ -7,7 +7,7 @@ stockfish = Stockfish('stockfish_20090216_x64_bmi2.exe', parameters={"Threads": 
 stockfish.set_depth(15)
 stockfish.set_skill_level(25)
 
-api_key = 'pUibzu9IEzv9niob'
+api_key = 'YOUR_KEY_HERE'
 
 headers = {'Authorization': f'Bearer {api_key}'}
 game_state_url = 'https://lichess.org/api/stream/event'
@@ -55,7 +55,7 @@ while True:
 
             challenge_state_json = json.loads(line)
             if challenge_state_json['type'] == 'challenge':
-                print('Tigran Petrosyan has been challenged.')
+                print('YOUR_BOT_NAME has been challenged.')
 
                 challenge_id = challenge_state_json['challenge']['id']
                 challenger = challenge_state_json['challenge']['challenger']['id']
@@ -137,7 +137,7 @@ while True:
                                                   {trushTalkDict['trushTalk' + str(randInt)]}})
 
                         if i == 1:
-                            if start_json["white"]['id'] == "pipibot":
+                            if start_json["white"]['id'] == "YOUR_BOT_NAME":
                                 white = True
                                 print('I am white.')
                             else:
