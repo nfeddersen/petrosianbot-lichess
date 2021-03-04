@@ -112,3 +112,7 @@ This file contains the instructions on how to set up your own Petrosian bot on L
 	--  b) If it is in a game, you must manually resign the game -- bot will not remember position
 	
 	--  c) Run command 8 (b) again to bring bot back online
+	
+10) Editing the trash talk lines
+	-- a) All the lines that the bot uses to trash talk are contained in the trushTalkDict on line 21
+	-- b) Change as many or as few of the lines that you want to your own lines. Don't include anything that would be frowned upon by Lichess
